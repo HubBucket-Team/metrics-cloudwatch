@@ -1,8 +1,8 @@
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Identifiers
 
-group = 'com.blacklocus'
-version = '0.3.5-SNAPSHOT'
+group = 'com.github.lukaszbudnik.metrics-cloudwatch'
+version = '0.3.6'
 ext.isReleaseVersion = !version.endsWith("SNAPSHOT")
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -128,22 +128,17 @@ uploadArchives {
         pom.project {
             name 'metrics-cloudwatch'
             description "A codahale metrics reporter to Amazon CloudWatch"
-            url 'https://github.com/blacklocus/metrics-cloudwatch'
+            url 'https://github.com/lukaszbudnik/metrics-cloudwatch'
             licenses {
                 license {
                     name 'The Apache Software License, Version 2.0'
                     url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
-                    distribution 'repo'
                 }
             }
             scm {
-                url 'scm:https://github.com/blacklocus/metrics-cloudwatch.git'
-                connection 'scm:git://github.com/blacklocus/metrics-cloudwatch.git'
-                developerConnection 'scm:git@github.com:blacklocus/metrics-cloudwatch.git'
-            }
-            organization {
-                name 'BlackLocus'
-                url 'http://www.blacklocus.com'
+                url 'scm:https://github.com/lukaszbudnik/metrics-cloudwatch.git'
+                connection 'scm:git://github.com/lukaszbudnik/metrics-cloudwatch.git'
+                developerConnection 'scm:git@github.com:lukaszbudnik/metrics-cloudwatch.git'
             }
             developers {
                 developer {
@@ -151,6 +146,11 @@ uploadArchives {
                     name 'Jason Dunkelberger'
                     organization 'BlackLocus'
                     organizationUrl 'http://www.blacklocus.com'
+                }
+                developer {
+                    id 'lukaszbudnik'
+                    name 'Łukasz Budnik'
+                    email 'lukasz.budnik@gmail.com'
                 }
             }
         }
